@@ -1,0 +1,6 @@
+<h4>All Users</h4>
+<ul>
+    <li *ngFor="let user of users | async">
+        <strong>Name:</strong> <a [routerLink]="['/users/user', user.id]"> {{user.name}}</a> <br /> <strong>Email:</strong> {{user.email}} <br /> <strong>Phone:</strong> {{user.phone}}
+    </li>
+</ul>

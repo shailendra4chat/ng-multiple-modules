@@ -1,0 +1,4 @@
+<h4>All Posts</h4>
+<ul>
+    <li *ngFor="let post of posts | async"><strong>Title:</strong> {{post.title}} <br /> <strong>Description:</strong> {{post.body}}</li>
+</ul>
